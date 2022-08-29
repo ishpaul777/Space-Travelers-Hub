@@ -9,8 +9,10 @@ const RocketsContainer = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getRocketsFromServer());
-  }, [dispatch]);
+    if (rockets.length === 0) {
+      dispatch(getRocketsFromServer());
+    }
+  }, []);
 
   const rocketComponets = rockets.map((rocket) => [
     <Rockets

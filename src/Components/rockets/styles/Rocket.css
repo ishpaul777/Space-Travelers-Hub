@@ -22,9 +22,10 @@
 }
 
 .reserved--batch {
-  padding: 5px 8px;
+  padding: 5px 7px;
   background-color: #63de5a;
-  border-radius: 5px;
+  border: none;
+  border-radius: 3px;
   color: #fff;
   margin-right: 10px;
 }

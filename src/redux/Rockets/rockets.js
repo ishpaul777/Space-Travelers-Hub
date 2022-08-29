@@ -1,10 +1,18 @@
 const SET_ROCKETS = 'SET_ROCKETS';
+const TOGGLE_RESERVED = 'SET_RESERVED';
 
 const rockets = [];
 export default function bookReducer(state = rockets, action) {
   switch (action.type) {
-    case `${SET_ROCKETS}`: {
+    case SET_ROCKETS: {
       return action.rockets;
+    }
+    case TOGGLE_RESERVED: {
+      const newState = state.map((rocket) => {
+        if (rocket.id !== action.id) return rocket;
+        return { ...rocket, isReserved: !rocket.isReserved };
+      });
+      return newState;
     }
     default:
       return state;
@@ -14,6 +22,11 @@ export default function bookReducer(state = rockets, action) {
 export const SetRockets = (rockets) => ({
   type: SET_ROCKETS,
   rockets,
+});
+
+export const ToggleReserved = (id) => ({
+  type: TOGGLE_RESERVED,
+  id,
 });
 
 export const getRocketsFromServer = () => async (dispatch) => {
