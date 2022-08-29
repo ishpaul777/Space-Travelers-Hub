@@ -1,0 +1,37 @@
+.nav--bar {
+  width: 100vw;
+  background-color: #fff;
+  padding: 8px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav--container {
+  justify-content: space-around;
+}
+
+.logo--container {
+  gap: 2rem;
+}
+
+.logo {
+  width: 60px;
+}
+
+.navlinks--container {
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav--links {
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav--links:hover {
+  color: rgba(54, 52, 52, 0.808);
+}
