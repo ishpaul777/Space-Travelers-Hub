@@ -28,16 +28,16 @@ Download the ZIP from this Github, or run the following git command to clone the
 Once the files are on your machine, open the space-travelers folder in Visual Studio Code, and follow the steps in Installation & Set Up
 - Install Node Modules
 
-`npm install`
+```npm install```
 - Start the development server
-`npm start`
+```npm start```
 
 - Open http://localhost:8080 to view it in the browser.
 
 # Test
 Test the application using the command
 
-`npm test`
+```npm test```
 Launches the test runner in the interactive watch mode.
 
 ## Authors
