@@ -11,18 +11,15 @@ const Missions = () => {
     dispatch(fetchMission());
   }, []);
 
-  const tablerRows = missions.map((mission) => {
-    console.log(mission);
-    return (
-      <TableRow
-        key={mission.id}
-        description={mission.description}
-        name={mission.name}
-        id={mission.id}
-        isjoined={mission.isjoined}
-      />
-    );
-  });
+  const tablerRows = missions.map((mission) => (
+    <TableRow
+      key={mission.id}
+      description={mission.description}
+      name={mission.name}
+      id={mission.id}
+      isjoined={mission.isjoined}
+    />
+  ));
   return (
     <div className="clm-row">
       <table>
@@ -30,7 +27,7 @@ const Missions = () => {
           <tr>
             <th>Mission</th>
             <th>Description</th>
-            <th>Status</th>
+            <th colSpan="2">Status</th>
           </tr>
         </thead>
         <tbody>
