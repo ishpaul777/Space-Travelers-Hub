@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-A live version of the website can be seen [here](https://frabjous-puffpuff-f259dc.netlify.app/)
+A live version of the website can be seen [here](https://spacehubfortravelers.netlify.app//)
 
 ## 🛠 Installation & Set Up
 
