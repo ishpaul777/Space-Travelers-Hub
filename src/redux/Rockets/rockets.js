@@ -35,7 +35,7 @@ export const getRocketsFromServer = () => async (dispatch) => {
   const rockets = data.map((rocket) => ({
     id: rocket.rocket_id,
     name: rocket.rocket_name,
-    image: rocket.flickr_images[0],
+    image: rocket.flickr_images[(Math.random() >= 0.5) ? 1 : 0],
     description: rocket.description,
     isReserved: false,
   }));
