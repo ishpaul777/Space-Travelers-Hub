@@ -11,13 +11,17 @@ const TableRow = ({
   const dispatch = useDispatch();
   return (
     <tr>
-      <td>{name}</td>
-      <td>{description}</td>
-      <td><span>{!isjoined ? 'Not a member' : 'Member'}</span></td>
+      <td className="mission--name">{name}</td>
+      <td className="mission--description">{description}</td>
       <td>
         {!isjoined
-          ? <button type="button" onClick={() => dispatch(toggleJoined(id))}>Join Mission</button>
-          : <button type="button" onClick={() => dispatch(toggleJoined(id))}>Leave Mission</button>}
+          ? <span className="joined--status--false">Not a member</span>
+          : <span className="joined--status--true">Member</span>}
+      </td>
+      <td>
+        {!isjoined
+          ? <button className="join--mission--button" type="button" onClick={() => dispatch(toggleJoined(id))}>Join Mission</button>
+          : <button className="leave--mission--button" type="button" onClick={() => dispatch(toggleJoined(id))}>Abort Mission</button>}
       </td>
     </tr>
   );

@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchMission } from '../../redux/Missions/missions';
 import TableRow from './TableRow';
+import './styles/mission.css';
 
 const Missions = () => {
   const missions = useSelector((state) => (state.missions));
@@ -21,7 +22,7 @@ const Missions = () => {
     />
   ));
   return (
-    <div className="clm-row">
+    <div className="missions--container flex">
       <table>
         <thead>
           <tr>
