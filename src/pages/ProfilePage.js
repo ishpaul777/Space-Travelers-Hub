@@ -39,7 +39,28 @@ const ProfilePage = () => {
         <h2>My Rockets</h2>
         <table>
           <tbody>
-            {/* Add your code here */}
+            {
+              state.missions.map((mission) => {
+                if (mission.isjoined) {
+                  missionJoined += 1;
+                  return (
+                    <tr key={mission.id}>
+                      <td>{mission.name}</td>
+                    </tr>
+                  );
+                }
+                return null;
+              })
+            }
+            {
+              !missionJoined
+              && (
+                <tr>
+                  <td>No Missions Joined</td>
+                </tr>
+              )
+            }
+
           </tbody>
         </table>
       </div>
