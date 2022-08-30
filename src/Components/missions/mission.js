@@ -9,7 +9,7 @@ const Missions = () => {
   const missions = useSelector((state) => (state.missions));
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchMission());
+    if (missions.length === 0) dispatch(fetchMission());
   }, []);
 
   const tablerRows = missions.map((mission) => (

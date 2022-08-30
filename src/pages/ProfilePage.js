@@ -2,8 +2,9 @@ import './Styles/ProfilePage.css';
 import { useSelector } from 'react-redux';
 
 const ProfilePage = () => {
-  const rockets = useSelector((state) => state.rockets);
+  const state = useSelector((state) => state);
   let rocketsReserved = 0;
+  let missionJoined = 0;
   return (
     <section className="profile--info--container flex">
       <div className="rockets--booked--info">
@@ -11,7 +12,7 @@ const ProfilePage = () => {
         <table>
           <tbody>
             {
-              rockets.map((rocket) => {
+              state.rockets.map((rocket) => {
                 if (rocket.isReserved) {
                   rocketsReserved += 1;
                   return (
@@ -38,15 +39,7 @@ const ProfilePage = () => {
         <h2>My Rockets</h2>
         <table>
           <tbody>
-            <tr>
-              <td>Random 1</td>
-            </tr>
-            <tr>
-              <td>Random 2</td>
-            </tr>
-            <tr>
-              <td>Random 3</td>
-            </tr>
+            {/* Add your code here */}
           </tbody>
         </table>
       </div>
