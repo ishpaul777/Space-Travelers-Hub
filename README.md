@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-A live version of the website can be seen [here](https://ishpaul777.github.io//)
+A live version of the website can be seen [here](https://frabjous-puffpuff-f259dc.netlify.app/)
 
 ## 🛠 Installation & Set Up
 
