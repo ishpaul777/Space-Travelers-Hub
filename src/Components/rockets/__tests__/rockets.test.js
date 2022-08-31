@@ -53,7 +53,7 @@ describe('Rockets tests', () => {
     const rocketName = screen.getByText('Falcon 1');
     expect(rocketName).toBeInTheDocument();
   });
-  test('Joining a Mission and reflecting the joined mission in Profile Page', () => {
+  test('Reserving and reflecting the reserved rocket in Profile Page', () => {
     render(
       <Provider store={store}>
         <RocketsPage />
@@ -64,5 +64,17 @@ describe('Rockets tests', () => {
 
     fireEvent.click(screen.getByText('Reserve Rocket'));
     expect(screen.getAllByText('Falcon 1').length).toEqual(2);
+  });
+
+  test('Aborting a Rocket Reservation and removing the canceled rocket in Profile Page', () => {
+    render(
+      <Provider store={store}>
+        <RocketsPage />
+        <ProfilePage />
+      </Provider>,
+    );
+
+    fireEvent.click(screen.getByText('Cancel Reservation'));
+    expect(screen.getAllByText('Falcon 1').length).toEqual(1);
   });
 });

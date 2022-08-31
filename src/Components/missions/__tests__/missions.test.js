@@ -65,4 +65,15 @@ describe('Missions tests', () => {
     fireEvent.click(screen.getByText('Join Mission'));
     expect(screen.getAllByText('Thaicom').length).toEqual(2);
   });
+  test('Aborting a Mission and removing the aborted mission in Profile Page', () => {
+    render(
+      <Provider store={store}>
+        <MissionsPage />
+        <ProfilePage />
+      </Provider>,
+    );
+
+    fireEvent.click(screen.getByText('Abort Mission'));
+    expect(screen.getAllByText('Thaicom').length).toEqual(1);
+  });
 });
