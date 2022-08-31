@@ -1,0 +1,19 @@
+.profile--info--container {
+  margin-top: 80px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10vw;
+  flex-wrap: wrap;
+}
+
+.profile--info--container table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 30vw;
+}
+
+.profile--info--container td {
+  border: 1px solid #868686;
+  text-align: left;
+  padding: 13px;
+}
