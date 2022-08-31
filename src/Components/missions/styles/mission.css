@@ -1,0 +1,76 @@
+.missions--container {
+  width: 90vw;
+  margin: 5vh auto;
+}
+
+.missions--container table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.missions--container td,
+th {
+  border: 1px solid #ddd;
+  width: fit-content;
+  padding: 13px;
+  text-align: center;
+  vertical-align: middle;
+  min-width: 10vw;
+}
+
+.missions--container th {
+  text-align: center;
+  font-size: 18px;
+}
+
+.missions--container tr:nth-child(even) {
+  background-color: #edecec;
+}
+
+.mission--name {
+  font-size: 18px;
+}
+
+.mission--description {
+  max-width: 40vw;
+  text-align: left !important;
+}
+
+.leave--mission--button {
+  padding: 9px 11px;
+  background: none;
+  color: rgb(236, 85, 43);
+  border: 1px solid rgb(236, 85, 43);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.join--mission--button {
+  padding: 10px 13px;
+  background-color: rgb(32, 127, 229);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.joined--status--true {
+  padding: 5px 7px;
+  background-color: #63de5a;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.joined--status--false {
+  padding: 5px 7px;
+  background-color: #848282;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 10px;
+}

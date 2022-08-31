@@ -1,3 +1,9 @@
-const RocketsPage = () => <h1 style={{ textAlign: 'center' }}>Hello from Rockets</h1>;
+import RocketsContainer from '../Components/rockets/RocketContainer';
+
+const RocketsPage = () => (
+  <div>
+    <RocketsContainer />
+  </div>
+);
 
 export default RocketsPage;

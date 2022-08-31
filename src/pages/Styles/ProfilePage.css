@@ -6,13 +6,13 @@
   flex-wrap: wrap;
 }
 
-table {
+.profile--info--container table {
   margin-top: 20px;
   border-collapse: collapse;
   width: 30vw;
 }
 
-td {
+.profile--info--container td {
   border: 1px solid #868686;
   text-align: left;
   padding: 13px;

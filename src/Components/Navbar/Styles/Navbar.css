@@ -18,7 +18,7 @@
 }
 
 .logo {
-  width: 60px;
+  width: 70px;
 }
 
 .navlinks--container {
@@ -32,6 +32,11 @@
   text-decoration: none;
 }
 
+.nav--links.active {
+  color: #000;
+  text-decoration: underline;
+}
+
 .nav--links:hover {
-  color: rgba(54, 52, 52, 0.808);
+  color: rgb(32, 127, 229);
 }

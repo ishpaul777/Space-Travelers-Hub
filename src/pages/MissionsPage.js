@@ -1,3 +1,9 @@
-const MissionsPage = () => <h1 style={{ textAlign: 'center' }}>Hello from Missions</h1>;
+import Mission from '../Components/missions/mission';
+
+const MissionsPage = () => (
+  <div>
+    <Mission />
+  </div>
+);
 
 export default MissionsPage;
