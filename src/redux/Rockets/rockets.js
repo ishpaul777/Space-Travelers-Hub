@@ -2,7 +2,7 @@ const SET_ROCKETS = 'SET_ROCKETS';
 const TOGGLE_RESERVED = 'SET_RESERVED';
 
 const rockets = [];
-export default function bookReducer(state = rockets, action) {
+export default function rocketsReducer(state = rockets, action) {
   switch (action.type) {
     case SET_ROCKETS: {
       return action.rockets;
